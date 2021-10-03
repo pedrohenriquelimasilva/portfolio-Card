@@ -1,0 +1,461 @@
+body{
+    background-image: url("https://www.hdnicewallpapers.com/Walls/Big/3D/4K_Wallpaper_of_3D_Colorful_Cubes.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    font-family: 'Playfair Display', serif;
+    opacity: 0.96;
+}
+
+.container{
+    background-color: aliceblue;
+    margin: 64px;
+    
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 10px #0E1D2F;
+}
+
+.page-land{
+    width:100%;
+    height:100%;
+    font-family: 'Playfair Display', serif;
+
+    background: rgba(0,0,0,.7);
+
+    display: flex;
+    position: fixed;
+    top: 0;
+    
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+.page-land.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.page-land .close{
+    display: flex;
+    position: relative;
+
+    align-items: flex-start;
+}
+
+.page-land .close button{
+    border: none;
+    background-color: #F0F2F5;
+}
+
+.page-land .close img{
+    height:30px;
+
+    cursor: pointer;
+}
+
+.page-land .img-data{
+    height:25px;
+    position:relative;
+    display: inline-flex;
+
+    margin: 15px 15px 15px 30px;
+}
+.page-land .people{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+
+.page-land .people h2{
+    margin-left: 17%;
+
+    font-family: 'Ephesis', cursive;
+    font-size: 30px;
+}
+
+.page-land .land{
+    display: flex;
+
+    height: 150px;
+    margin-left: 40px;
+
+    box-shadow: 6px 6px 6px #0E1D2F;
+    border-radius: 300px;
+}
+
+.page-land .style-people{
+    background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+    border-radius: 20px;
+
+    padding: 20px;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.agradeciment{
+    background: #F0F2F5;
+    padding: 2.4rem;
+
+    width: 90%;
+    max-width: 900px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-aline{
+    display: absolute;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary{
+    font-size: 24px;
+    line-height: 28px;
+
+
+
+    width: 170px;
+    height: 61px;
+    justify-content: flex-end;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+
+    background: #ECF4FF;
+    border: 2px solid #0E1D2F;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.btn-primary:first-child{
+    margin-left: 15px;
+}
+
+.btn-primary:last-child{
+    width: 200px;
+    display: flex;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background: #ECFFFF;
+    opacity: 1;
+
+
+    transform: translateY(0px);
+
+    box-shadow: 0px 6px 6px #0E1D2F;
+
+    animation: up-button 700ms forwards;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#profile{
+    border-radius: 400px;
+    max-width: 100px;
+    margin-right: 20px;
+
+    box-shadow: 0px 6px 6px #0E1D2F;
+}
+
+#name{
+    font-family: 'Ephesis', cursive;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sub-title{
+    font-size: 24px;
+}
+
+
+.portfolio{
+    margin: 10px;
+
+    padding: 10px;
+    
+    display: grid;
+    grid-template-columns: [container-portfolio]2.5fr [conteiner-nav].5fr;
+    column-gap: 20px;
+}
+
+.container-portfolio{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 36px;
+    width: 100%;
+
+    grid-column: container-portfolio;
+
+    background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+    border-radius: 20px;
+}
+
+.container-portfolio scroll-container{
+        display: block;
+        width: 100%;
+        height: 530px;
+        overflow-y: scroll;
+        scroll-behavior:smooth;
+        visibility: inherit;
+}
+
+.container-portfolio scroll-container::-webkit-scrollbar {
+    height:0px;
+    width:0px;
+    background: none;
+    border: 1px solid black;
+}
+
+
+#title-portfolio{
+    font-size: 48px;
+
+    align-items: center;
+    text-align: center;
+}
+
+.li-div {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.li-div a, .conteiner-nav a{
+  color: #1c1c1c;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+.conteiner-nav{
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 10px;
+    
+    align-items: center;
+    text-align: center;
+
+    padding: 30px 20px;
+    grid-column: conteiner-nav;
+
+    background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+    border-radius: 20px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.conteiner-nav a{
+    font-size: 48px;
+}
+
+.li-animation:hover{
+    border-radius: 300px;
+    box-shadow: 4px 4px 6px #0E1D2F;
+
+    transform: translateY(-10px);
+  
+    animation: up-button 1000ms forwards;
+}
+
+
+.content-footer{
+    max-height: 70px;
+
+    display: grid;
+    grid-template-columns: [content-data]1fr 2fr [back-top].5fr;
+    column-gap: 20px;
+
+    justify-content: center; 
+}
+
+.content-data{
+    display: flex;
+    grid-column: content-data; 
+    align-items: center;   
+    justify-content: space-between;
+
+    background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+    border-radius: 20px;
+
+    max-height: 70px;
+}
+
+.content-data .img-data{
+    height:50px;
+    position: relative;
+
+    margin: 15px;
+}
+
+.content-data .contact{
+    margin-left: 10px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.img-data:hover{
+    border-radius: 70px;
+    box-shadow: 4px 4px 6px #0E1D2F;
+
+    transform: translateY(-10px);
+  
+    animation: up-button 1000ms forwards;
+}
+
+.back-top{
+    display: flex;
+    grid-column: back-top;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+
+    background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+    border-radius: 400px;
+}
+
+.back-top a{
+    margin:30%
+}
+
+.back-top:hover{
+    box-shadow: 4px 4px 6px #0E1D2F;
+
+    transform: translateY(-10px);
+  
+    animation: up-button 1000ms forwards;
+}
+
+
+@keyframes up {
+    from {
+      transform: translateY(0)
+    }
+    to {
+      transform: translateY(-10px)
+    } 
+  }
+  @keyframes up-button {
+    from {
+      transform: translateY(0)
+    }
+    to {
+      transform: translateY(-5px)
+    } 
+  }
+  
+  .animate-up:hover {
+    transform: translateY(-10px);
+  
+    animation: up 1000ms forwards;
+}
+
+
+
+.dark-page{
+    background-image: url("https://www.hdnicewallpapers.com/Walls/Big/3D/4K_Wallpaper_of_3D_Colorful_Cubes.jpg");
+}
+
+.dark-page .page-land{
+    color: #F7F7F7;
+}
+
+.dark-page .page-land .agradeciment{
+    background-color: #1C1C1C;
+}
+
+.dark-page .page-land .style-people{
+    box-shadow: 2px 2px 4px #F7F7F7;
+
+    background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+.dark-page .page-land .close button{
+    background-color: #1C1C1C;
+}
+
+.dark-page .container{
+    background: #333439;
+    box-shadow: 6px 6px 6px #0E1D2F;
+    border-radius: 20px;
+}
+
+.dark-page .container-header{
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #F7F7F7;
+}
+
+
+.dark-page #profile:hover{
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 6px #F7F7F7;
+  
+    animation: up 1000ms forwards;
+}
+
+.dark-page .btn-primary{
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+
+    background: #1C1C1C;
+    border: 2px solid #F7F7F7;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.dark-page .btn-primary:hover{
+    transform: translateY(0px);
+
+    box-shadow: 0px 6px 6px #F7F7F7;
+
+    animation: up-button 700ms forwards;
+}
+
+.dark-page .container-portfolio, .dark-page .conteiner-nav{
+    box-shadow: 2px 2px 4px #F7F7F7;
+
+    background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+
+.dark-page .content-data, .dark-page .back-top{
+    background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
